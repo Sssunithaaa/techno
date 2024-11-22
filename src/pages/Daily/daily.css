@@ -1,0 +1,249 @@
+* {
+  margin: 1110px;
+}
+.form-title {
+  text-align: center;
+  font-size: 3.5rem;
+  top: 20px;
+}
+#body {
+  height: 100%;
+}
+.daily-entry-form {
+  max-width: 600px; /* Increase max-width */
+  margin: 0 auto;
+  padding: 90px;
+  border: 4px solid #ccc;
+  border-radius: 30px;
+  background-color: #f9f9f9;
+  color: black;
+  position: relative; /* Position relative for absolute positioning of animated background */
+  overflow: hidden;
+  box-shadow: 3px 6px 30px blue; /* Hide overflow to prevent background from overflowing */
+}
+
+/* Animated background */
+.animated-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    to bottom,
+    #000000,
+    #333333
+  ); /* Example gradient background */
+  opacity: 0.3; /* Adjust opacity as needed */
+  animation: animateBackground 10s linear infinite; /* Adjust animation duration and timing as needed */
+}
+
+.animated-label {
+  display: block;
+  margin-bottom: 10px; /* Add margin bottom for spacing */
+  font-size: 18px;
+  opacity: 0;
+  animation: slideIn 1s ease forwards;
+  animation-delay: 0.7s;
+}
+
+.animated-input,
+.animated-select {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px; /* Add margin bottom for spacing */
+  opacity: 0;
+  animation: slideIn 1s ease forwards;
+  animation-delay: 0.9s;
+}
+
+.submit-btn {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 20px; /* Add margin top for spacing */
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  opacity: 0;
+  animation: slideIn 1s ease forwards;
+  animation-delay: 1.1s;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.dropdown-toggle {
+  margin-bottom: 20px; /* Add margin bottom to the dropdown toggle */
+}
+
+.dropdown-menu {
+  margin-bottom: 20px; /* Add margin bottom to the dropdown menu */
+}
+
+@keyframes slideIn {
+  from {
+    opacity: 0;
+    transform: translateY(-30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.checkbox-option {
+  margin-bottom: 10px; /* Add margin bottom to create space between checkbox options */
+}
+
+.checkbox-label {
+  margin-left: 3px;
+  font-size: 50px; /* Add margin left to create space between checkbox and label */
+}
+
+.daily-h1 {
+  font-size: 4.8rem;
+
+  left: -100%;
+  color: #fff;
+}
+
+@keyframes slideFromLeft {
+  0% {
+    left: -100%; /* Start position */
+  }
+  100% {
+    left: 0; /* End position */
+  }
+}
+.daily-data {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.daily-box {
+  margin-top: 40px;
+  border: 1px solid #ccc;
+  border-radius: 35px;
+  padding: 40px; /* Increased padding */
+  margin-right: 20px;
+  margin-bottom: 20px;
+  color: black;
+  font-size: 1.2rem; /* Larger font size */
+  background: linear-gradient(
+    to bottom right,
+    #ffffff,
+    #f9f9f9
+  ); /* Gradient background */
+  /* box-shadow: 3px 6px 30px blue; Shadow effect */
+}
+
+.daily-box h3 {
+  margin-bottom: 10px; /* Add margin below the heading */
+}
+
+.daily-box p {
+  margin-bottom: 5px; /* Add margin below each paragraph */
+}
+
+.total-target {
+  margin-bottom: 5px; /* Add margin below each paragraph */
+}
+
+.target-input {
+  margin-top: 20px; /* Add margin above the input */
+}
+
+.target-input {
+  width: calc(100% - 40px);
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.big-box {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between; /* Spread items evenly */
+  padding: 20px; /* Add padding */
+  margin-top: 20px; /* Add margin on top */
+  border: 2px solid #ccc; /* Add border */
+  border-radius: 20px; /* Add border radius */
+  /* Set background color */
+  box-shadow: 3px 6px 30px blue;
+}
+
+.efficiency {
+  font-weight: 400;
+  font-size: 2.4rem;
+}
+
+.machine-label {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.employee-name,
+.shift {
+  margin-bottom: 5px;
+  font-size: 1rem;
+}
+
+.machine-target-input {
+  width: 100%;
+  padding: 8px;
+  margin-top: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.total-target {
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.total-target span {
+  font-weight: bold;
+}
+
+.breakdown-label {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.breakdown-checkbox {
+  margin-right: 5px;
+}
+
+.partialshift-label {
+  display: block;
+  margin-top: 10px;
+  font-size: 1rem;
+}
+
+.partialshift-checkbox {
+  margin-right: 5px;
+}
+
+.daily-submisssion-btn {
+  color: whitesmoke;
+  background-color: primary;
+}

@@ -1,0 +1,179 @@
+@import url("https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap");
+
+.c2-ChartsContainer {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Two columns */
+  grid-template-rows: repeat(2, 1fr);
+  /* Two columns */
+  column-gap: 15px;
+
+  row-gap: 15px;
+  /* Gap between the boxes */
+}
+
+.c2-chartbox {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  /* Add margin to create space between chart boxes */
+}
+
+.c2-chartbox:hover {
+  border-color: royalblue;
+}
+
+.c2-d-chart {
+  padding: 0px;
+  /* border: 2px solid #ccc; */
+  width: 90%;
+  height: 92%;
+}
+
+.c2-chartbox.c2-box1,
+.c2-chartbox.c2-box2,
+.c2-chartbox.c2-box3,
+.c2-chartbox.c2-box4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.c2-box1 {
+  grid-column: auto;
+  /* Place in the first column */
+  grid-row: auto;
+  /* Place in the first row */
+}
+
+.c2-box2 {
+  grid-column: auto;
+  /* Place in the second column */
+  grid-row: auto;
+  /* Place in the first row */
+}
+
+.c2-box3 {
+  grid-column: auto;
+  /* Place in the first column */
+  grid-row: auto;
+  /* Place in the second row */
+}
+
+.c2-box4 {
+  grid-column: auto;
+  /* Place in the second column */
+  grid-row: auto;
+  /* Place in the second row */
+}
+
+.c2-chart.filterChart {
+  width: 100%;
+  height: 100%;
+}
+
+.c2-chart {
+  width: 100%;
+  height: 100%;
+}
+
+.c2-box {
+  border-radius: 10px;
+}
+
+.c2-filterBox {
+  display: flex;
+  margin-bottom: 18px;
+  position: relative;
+}
+
+.c2-fromInput,
+.c2-toInput {
+  display: flex;
+  align-items: center;
+  height: 40px;
+  border-radius: 10px;
+  background-color: rgb(76, 75, 75);
+  border-color: rgb(76, 75, 75);
+  position: absolute;
+}
+
+.c2-toInput {
+  right: 0%;
+}
+
+.c2-fromInput {
+  right: 20%;
+}
+
+.c2-fromLabel,
+.c2-toLabel {
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.7px !important;
+  font-family: "Fjalla One", sans-serif;
+  background-color: rgb(76, 75, 75);
+  justify-content: center;
+  border-radius: 10px;
+  width: 60px;
+  align-items: center;
+  display: flex;
+}
+
+.c2-customDatePicker {
+  height: 100%;
+  border-radius: 10px;
+  font-size: 16px;
+  background-color: white;
+  opacity: 0.95;
+  font-family: "Fjalla One", sans-serif;
+  color: rgb(7, 3, 69);
+  z-index: 10;
+  letter-spacing: 2px;
+  display: flex;
+  text-align: center;
+}
+
+.c2-customDatePicker>div {
+  border: none;
+}
+
+.c2-customDatePicker>div>button:nth-of-type(1) {
+  position: absolute;
+  visibility: hidden;
+}
+
+.c2-customDatePicker>div>button:nth-of-type(2) {
+  padding-left: 40px;
+}
+
+.c2-noDataNotify {
+  margin-top: 50px;
+  font-family: "Fjalla One", sans-serif;
+  font-size: 2rem;
+  text-align: center;
+  display: flex;
+  color: white;
+}
+
+.c2-daysFilter {
+  position: relative;
+  display: flex;
+  height: 40px;
+  background-color: rgb(76, 75, 75);
+  border-radius: 10px !important;
+}
+
+.c2-dayFilterLabel {
+  font-family: "Fjalla One", sans-serif;
+  font-weight: 300;
+  font-size: 18px;
+  letter-spacing: 0.7px !important;
+  background-color: rgb(76, 75, 75);
+  justify-content: center;
+  border-radius: 10px;
+  width: 130px;
+  display: flex;
+  align-items: center;
+}

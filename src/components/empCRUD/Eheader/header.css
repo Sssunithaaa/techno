@@ -1,0 +1,43 @@
+/* header.css */
+
+header {
+  color: #fff;
+  padding: 10px;
+  display: flex;
+  justify-content: space-between; /* Align items to the start and end of the header */
+}
+
+h1 {
+  margin: 0;
+  animation: slideFromLeft 2s ease-in-out; /* Add animation for sliding from left */
+}
+
+.round-button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: transform 0.2s ease-in-out;
+  margin-left: auto;
+  margin-top: 5px;
+}
+
+.round-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.1); /* Enlarge on hover */
+}
+
+/* Animation for sliding from left */
+@keyframes slideFromLeft {
+  from {
+    opacity: 0;
+    transform: translateX(-50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}

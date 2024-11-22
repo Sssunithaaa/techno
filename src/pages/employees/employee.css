@@ -1,0 +1,44 @@
+.employee-container {
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.text-field {
+  background-color: white;
+  color: black;
+  border-radius: 10px;
+  top: 10px;
+  width: 150px;
+  padding: 8px;
+
+  &:hover {
+    color: white;
+  }
+}
+
+.text-field-container {
+  margin-bottom: 20px;
+}
+
+.table-header {
+  color: white;
+}
+
+.table-cell {
+  color: black;
+}
+
+.employee-pagination {
+  color: black;
+  background-color: white;
+}
+
+.m-2 {
+  position: absolute; /* Set the position of the button to absolute */
+  top: 30px; /* Distance from the top */
+  right: 20px;
+  /* Distance from the right */
+  float: right;
+  font-size: 0.875rem;
+}

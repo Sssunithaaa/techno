@@ -1,0 +1,59 @@
+.tool-container {
+  background-color: black;
+  padding: 20px;
+  border-radius: 5px;
+}
+
+.search-input {
+  margin-bottom: 20px;
+  margin-right: 10px;
+}
+
+/* Style for the table headers */
+.table-header {
+  color: white;
+}
+
+/* Style for the table cells */
+.table-cell {
+  color: black;
+}
+
+/* Style for the pagination */
+.tool-pagination {
+  color: black;
+  background-color: white;
+}
+
+.text-field {
+  background-color: white;
+  color: black;
+  border-radius: 20px;
+}
+
+.text-field-container {
+  margin-bottom: 20px;
+}
+
+.text-field.minimized-text-field1 {
+  margin-right: 20px; /* Add margin right to create spacing */
+}
+
+.text-field.minimized-text-field2 {
+  margin-right: 20px; /* Add margin right to create spacing */
+}
+
+.add-button {
+  position: absolute; /* Set the position of the button to absolute */
+  top: 20px; /* Distance from the top */
+  right: 20px;
+  /* Distance from the right */
+  float: right;
+  font-size: 0.875rem;
+}
+
+.tool-container {
+  background-color: black;
+  padding: 20px;
+  position: relative; /* Set the position of the container to relative */
+}

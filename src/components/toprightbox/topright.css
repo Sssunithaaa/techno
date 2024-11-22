@@ -1,0 +1,81 @@
+.toprightBox h1 {
+  margin-bottom: 20px;
+}
+
+@media screen and (max-width: 1400px) {
+  .toprightBox h1 {
+    font-size: 24px;
+  }
+}
+
+.toprightBox {
+  height: 100vh;
+  overflow-y: hidden;
+}
+
+.toprightBox .list {
+  overflow-y: auto;
+}
+
+
+.toprightBox .list .listItem {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 30px;
+}
+
+.toprightBox .list .listItem .user {
+  display: flex;
+  gap: 20px;
+}
+
+.toprightBox .list .listItem .user img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+@media screen and (max-width: 1400px) {
+  .toprightBox .list .listItem .user img {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .toprightBox .list .listItem .user img {
+    display: block;
+  }
+}
+
+.toprightBox .list .listItem .user .userTexts {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+.toprightBox .list .listItem .user .userTexts .username {
+  font-size: 14px;
+  font-weight: 500;
+}
+
+.toprightBox .list .listItem .user .userTexts .email {
+  font-size: 12px;
+}
+
+@media screen and (max-width: 1400px) {
+  .toprightBox .list .listItem .user .userTexts .email {
+    display: none;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .toprightBox .list .listItem .user .userTexts .email {
+    display: block;
+  }
+}
+
+.toprightBox .list .listItem .amount {
+  font-weight: 500;
+}

@@ -1,0 +1,278 @@
+.tool-chart-container {
+  display: flex;
+  align-items: flex-start;
+  background-color: var(--background);
+  /* Use the variable for background color */
+
+  width: 100%;
+  padding-inline: 50px;
+  border-radius: 20px;
+  position: relative;
+  margin-block: 20px;
+
+}
+
+.tool-chart {
+
+  flex-grow: 20;
+
+  width: 100%;
+  height: 100%;
+
+  border: 2px solid aliceblue;
+  /* Add border to the chart */
+  border-radius: 80px;
+  /* Add border radius */
+  /* Add shadow to the chart */
+  box-shadow: 0px 6px 30px blue;
+}
+
+.additional-info {
+  color: var(--base);
+  /* Use the variable for base color */
+  max-width: 50%;
+}
+
+.additional-info h2 {
+  font-size: 3rem;
+  /* Set larger font size for the tool name */
+}
+
+.additional-info p {
+  font-size: 1.5rem;
+  /* Set smaller font size for other details */
+}
+
+.tool-information span,
+.tool-name span,
+.tool-code span,
+.length-of-cut span,
+.cost span {
+  color: var(--shadow);
+  /* Use the variable for shadow color */
+  display: inline-block;
+  position: relative;
+}
+
+.tool-information span::before,
+.tool-name span::before,
+.tool-code span::before,
+.length-of-cut span::before,
+.cost span::before,
+.tool-information span::after,
+.tool-name span::after,
+.tool-code span::after,
+.length-of-cut span::after,
+.cost span::after {
+  content: attr(data-text);
+  left: 0;
+  overflow: hidden;
+  position: absolute;
+  speak: none;
+}
+
+.tool-information span::before,
+.tool-name span::before,
+.tool-code span::before,
+.length-of-cut span::before,
+.cost span::before {
+  animation: max-height 0.4s cubic-bezier(0.61, 1, 0.88, 1) 1 normal both;
+}
+
+.tool-information span::after,
+.tool-name span::after,
+.tool-code span::after,
+.length-of-cut span::after,
+.cost span::after {
+  animation: max-width 0.7s cubic-bezier(0.61, 1, 0.88, 1) 1 normal both;
+}
+
+/* Adjust the animation delay for each field */
+.tool-information span::before {
+  animation-delay: 0s;
+}
+
+.tool-name span::before {
+  animation-delay: 0.1s;
+}
+
+.tool-code span::before {
+  animation-delay: 0.2s;
+}
+
+.length-of-cut span::before {
+  animation-delay: 0.3s;
+}
+
+.cost span::before {
+  animation-delay: 0.4s;
+}
+
+.tool-information span::after {
+  animation-delay: 0.5s;
+}
+
+.tool-name span::after {
+  animation-delay: 0.6s;
+}
+
+.tool-code span::after {
+  animation-delay: 0.7s;
+}
+
+.length-of-cut span::after {
+  animation-delay: 0.8s;
+}
+
+.cost span::after {
+  animation-delay: 0.9s;
+}
+
+.tool-information {
+  animation: shake 5s ease-in-out;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0);
+  }
+
+  10% {
+    transform: translateX(-5px) rotate(0deg);
+  }
+
+  20% {
+    transform: translateX(5px) rotate(0deg);
+  }
+
+  30% {
+    transform: translateX(-5px) rotate(0deg);
+  }
+
+  40% {
+    transform: translateX(5px) rotate(0deg);
+  }
+
+  50% {
+    transform: translateX(-5px) rotate(0deg);
+  }
+
+  60% {
+    transform: translateX(5px) rotate(0deg);
+  }
+
+  70% {
+    transform: translateX(-5px) rotate(0deg);
+  }
+
+  80% {
+    transform: translateX(5px) rotate(0deg);
+  }
+
+  90% {
+    transform: translateX(-5px) rotate(0deg);
+  }
+
+  100% {
+    transform: translateX(0) rotate(0deg);
+  }
+}
+
+@keyframes max-width {
+  from {
+    max-width: 0;
+  }
+
+  to {
+    max-width: 100%;
+  }
+}
+
+@keyframes max-height {
+  from {
+    max-height: 0;
+  }
+
+  to {
+    max-height: 100%;
+  }
+}
+
+/* Additional CSS for the graph */
+.additional-info p {
+  opacity: 0;
+  animation: fadeIn 1s forwards;
+  /* Fade-in animation */
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateX(100%);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+
+  /* Delay each paragraph */
+  /* You can adjust the delay for each field */
+  0% {
+    animation-delay: 0s;
+  }
+
+  25% {
+    animation-delay: 0.25s;
+  }
+
+  50% {
+    animation-delay: 0.5s;
+  }
+
+  75% {
+    animation-delay: 0.75s;
+  }
+}
+
+.additional-info h1 {
+  font-size: 4.5rem;
+  /* Set font size for h1 */
+  animation: fadeIn 1s forwards;
+  /* Apply fade-in animation to h1 */
+}
+
+.additional-info h3 {
+  font-size: 3rem;
+  /* Set font size for h3 */
+  animation: fadeIn 1s forwards;
+  /* Apply fade-in animation to h3 */
+}
+
+.additional-info p {
+  font-size: 1.5rem;
+  /* Set font size for other paragraphs */
+  animation: fadeIn 1s forwards;
+  /* Apply fade-in animation to other paragraphs */
+}
+
+/* Adjust the animation delay for each heading and paragraph */
+.tool-information h1 {
+  animation-delay: 0.3s;
+}
+
+.tool-name h3 {
+  animation-delay: 0.6s;
+}
+
+.tool-code p {
+  animation-delay: 0.9s;
+}
+
+.length-of-cut p {
+  animation-delay: 1.2s;
+}
+
+.cost p {
+  animation-delay: 1.5s;
+}

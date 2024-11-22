@@ -1,0 +1,7 @@
+.big-chart-container {
+  height: 100%;
+}
+
+.big-chart-container canvas {
+  height: 100%;
+}

@@ -1,0 +1,136 @@
+/* list.css */
+
+/* Container styling */
+.contain-table {
+  margin-top: 20px;
+  margin-bottom: 20px; /* Adjusted margin */
+}
+
+/* Search bar container */
+.search-bar-container {
+  display: none;
+  margin-bottom: 10px;
+}
+
+/* Search bar input */
+.search-bar {
+  width: 200px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Items per page container */
+.items-per-page-container {
+  margin-bottom: 10px;
+}
+
+/* Items per page input */
+.items-per-page-input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-right: 10px;
+}
+
+/* Table styling */
+.stripped-table {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+  color: black;
+}
+
+.stripped-table th,
+.stripped-table td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+.stripped-table tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+.stripped-table tr:nth-child(odd) {
+  background-color: #fff;
+}
+
+.stripped-table tr:hover {
+  background-color: #ddd;
+}
+
+/* Text alignment classes */
+.text-center {
+  text-align: center;
+}
+
+.text-right {
+  text-align: right;
+}
+
+.text-left {
+  text-align: left;
+}
+
+/* Button styling */
+.Edit-button,
+.Delete-button {
+  background-color: #007bff;
+  color: white;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: background-color 0.3s ease, transform 0.2s ease-in-out;
+}
+
+.Edit-button:hover,
+.Delete-button:hover {
+  background-color: #0056b3;
+  transform: scale(1.05);
+}
+
+/* Search input styling */
+.search-input {
+  margin-bottom: 10px;
+  transition: transform 0.2s ease-in-out;
+}
+
+.search-input input {
+  padding: 10px;
+  height: 30px;
+  width: 100%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+/* Enlarge on hover */
+.search-input:hover {
+  transform: scale(1.05);
+}
+
+/* Pagination button styling */
+.pagination-button {
+  float: left;
+  margin-top: 10px;
+  display: flex;
+}
+
+.pagination-button button {
+  margin-left: 5px;
+}
+
+/* Hover effect for pagination button */
+.pagination-button:hover {
+  background-color: #0056b3;
+}
+
+/* Clearfix for float elements */
+.clearfix::after {
+  content: "";
+  display: table;
+  clear: both;
+}
